@@ -18,8 +18,8 @@ class Oignon
     private ?string $nom = null;
 
     #[ORM\ManyToOne(targetEntity: Burger::class, inversedBy: 'burger')]
-    #[ORM\JoinColumn(nullable: true)]
-    private Burger $burger;
+    #[ORM\JoinColumn(nullable: false)]
+    private $burger;
 
 
     public function getNom(): ?string

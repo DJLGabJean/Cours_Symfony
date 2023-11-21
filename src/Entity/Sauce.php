@@ -17,7 +17,6 @@ class Sauce
     private ?string $nom = null;
 
     #[ORM\ManyToOne(targetEntity: Burger::class, inversedBy: 'burger')]
-    #[ORM\JoinColumn(nullable: true)]
     private Burger $burger;
 
 
