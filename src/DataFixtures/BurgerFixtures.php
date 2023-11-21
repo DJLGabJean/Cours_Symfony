@@ -35,8 +35,8 @@ class BurgerFixtures extends Fixture
                         foreach ($commentaires as $commentaire) {
                             $burger = new Burger();
                             $burger->setNom($nomBurger);
-                            $burger->setOignon($oignon);
-                            $burger->setSauce($sauce);
+                            $burger->addOignon($oignon);
+                            $burger->addSauce($sauce);
                             $burger->setImage($image);
                             $burger->setCommentaire($commentaire);
                             $manager->persist($burger);
