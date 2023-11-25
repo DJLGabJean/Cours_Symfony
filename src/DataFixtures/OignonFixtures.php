@@ -15,6 +15,7 @@ class OignonFixtures extends Fixture
         $nomsOignons = [
             'Blanc',
             'Rouge',
+            'Blanc'
         ];
 
         foreach ($nomsOignons as $key => $nomOignon) {
