@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Liste des commentaires</title>
+    </head>
+    <body>
+        {% import 'macros.twig' as macros %}
+        <h1>Liste des commentaires</h1>
+        <ul>
+            {{ macros.liste_entites(commentaires, 'texte') }}
+        </ul>
+    </body>
+</html>
+
+
+

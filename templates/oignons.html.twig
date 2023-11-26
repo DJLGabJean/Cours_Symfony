@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Liste des oignons</title>
+    </head>
+    <body>
+        {% import 'macros.twig' as macros %}
+        <h1>Liste des oignons</h1>
+        <ul>
+            {{ macros.liste_entites(oignons, 'nom') }}
+        </ul>
+    </body>
+</html>
+
+
+

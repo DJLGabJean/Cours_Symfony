@@ -5,11 +5,10 @@
         <title>Liste des burgers</title>
     </head>
     <body>
+        {% import 'macros.twig' as macros %}
         <h1>Liste des burgers</h1>
         <ul>
-            {% for burger in burgers %}
-                <li>{{ burger.nom }}</li>
-            {% endfor %}
+            {{ macros.liste_entites(burgers, 'nom') }}
         </ul>
     </body>
 </html>

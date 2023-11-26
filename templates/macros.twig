@@ -1,0 +1,9 @@
+{% macro liste_entites(entites, nom_attribut) %}
+    {% if entites is empty or nom_attribut is empty %}
+        <li>Aucun {{ nom_attribut }}</li>
+    {% else %}
+        {% for entite in entites %}
+            <li>{{ attribute(entite, nom_attribut) }}</li>
+        {% endfor %}
+    {% endif %}
+{% endmacro %}

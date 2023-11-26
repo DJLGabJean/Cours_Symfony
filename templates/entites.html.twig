@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Liste des entités</title>
+    </head>
+    <body>
+        <h1>Liste des burgers</h1>
+        <ul>
+            {% for entite in entites %}
+                <li>{{ entite.nom }}</li>
+            {% endfor %}
+        </ul>
+        {# <h1>Liste des commentaires</h1>
+        <ul>
+            {{ macros.liste_entites(commentaires, 'texte') }}
+        </ul>
+        <h1>Liste des images</h1>
+        <ul>
+            {{ macros.liste_entites(images, 'nom') }}
+        </ul>
+        <h1>Liste des oignons</h1>
+        <ul>
+            {{ macros.liste_entites(oignons, 'nom') }}
+        </ul>
+        <h1>Liste des pains</h1>
+        <ul>
+            {{ macros.liste_entites(pains, 'nom') }}
+        </ul>
+        <h1>Liste des sauces</h1>
+        <ul>
+            {{ macros.liste_entites(sauces, 'nom') }}
+        </ul> #}
+
+    </body>
+</html>
